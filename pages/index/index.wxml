@@ -1,3 +1,4 @@
+
 <view class="container">
   <view class="header">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -15,14 +16,13 @@
     </view>
     <view class="box1">
       <view wx:for="{{remen_img}}" class="box2">
-        <image src="{{item}}" mode="widthFix"></image>
-        <view class="mask"></view>
+        <image src="{{item}}" mode="widthFix" bindtap="toDetailPage" data-id="{{item.id}}"></image>
       </view>
     </view>
   </view>
   <view class="content">
-    <view class="title">最新活动</view>
-    <view wx:for="{{activity_img}}" bindtap="actName" class="activity" style="margin-left:20rpx;margin-right:20rpx;">
+    <view class="title">最新派对</view>
+    <view wx:for="{{activity_img}}" bindtap="toDetailPage" class="activity" style="margin-left:20rpx;margin-right:20rpx;">
       <image src="{{item}}"></image>
     </view>
   </view>

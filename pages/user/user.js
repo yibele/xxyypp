@@ -1,10 +1,17 @@
 // pages/user/user.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    avatarUrl : '',
+    nickName: '',
+    act_img : [
+      "http://172.19.208.253/act_1.jpg",
+      "http://172.19.208.253/act_1.jpg"
+    ]
   
   },
 
@@ -12,7 +19,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var _this = this;
+    var app = getApp();
+    app.getUserInfo(function(data){
+      _this.setData({
+        avatarUrl:data.avatarUrl,
+        nickName : data.nickName
+      })
+    })
   },
 
   /**

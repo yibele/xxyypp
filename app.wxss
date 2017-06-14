@@ -1,6 +1,5 @@
 .container {
   color: 666666;
-  font-family: Georgia, SimSun,”华文细黑”，”微软雅黑”;
   background:#e6e6e6;
   padding-bottom: 20rpx;
 }
@@ -18,4 +17,11 @@ background-color:#52bc89;
   background-color: #e5e5e5;
   margin-top:20rpx;
   margin-bottom: 20rpx;
+}
+.spacing {
+  height: 20rpx;
+  width:100%;
+}
+swiper {
+  height: 360rpx;
 }

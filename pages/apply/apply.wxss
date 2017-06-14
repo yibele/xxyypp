@@ -2,9 +2,15 @@
 .apply {
   padding: 20rpx;
 }
+.gongxi {
+  padding: 40rpx;
+  text-align: center;
+  font-size:40rpx;
+}
 .apply_bac{
   width: 90%;
   height: 500rpx;
+  background:#52bc89;
 
   border-radius: 6rpx;
   opacity: 0.8;
@@ -12,7 +18,7 @@
 }
 .container {
   padding-top: 200rpx;
-  background:#52bc89;
+  background:#fff;
 }
 ._time {
   font-size: 24rpx;
