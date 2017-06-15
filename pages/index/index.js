@@ -37,6 +37,18 @@ Page({
     });
   }, onLoad: function () {
     var that = this;
+      this.login();
+       wx.request({
+      url: 'http://localhost:8888/api/activity',
+      success: function(res){
+        that.setData ({
+          act: res.data
+        })
+      }
+    })
+    console.log(this.data);
+  },
+    login : function () {
     wx.login({
       success: function (res) {
         wx.getUserInfo({
@@ -59,4 +71,6 @@ Page({
     })
     console.log(this.data);
   }
+})
+    }
 })
